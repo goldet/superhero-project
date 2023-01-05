@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import AddSuperheroForm from './Components/AddSuperheroForm';
+import SuperHeroGrid from './Components/SuperHeroGrid';
 import './App.css';
 
+
 function App() {
+   const [isSuperheroGrid, setIsSuperheroGrid] = useState (true)
+   const [superheroes, setSuperheroes] = useState(null)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="header">Superhero Display</div>
+
+   <button onClick={() => setIsSuperheroGrid(true)}>Superheroes</button>  
+   <button onClick={() => setIsSuperheroGrid(false)}>Add A Superhero</button>  
+   {isSuperheroGrid && <SuperHeroGrid superheroes={superheroes}/>}
+   {!isSuperheroGrid && <AddSuperheroForm />}
+
+
     </div>
   );
 }
