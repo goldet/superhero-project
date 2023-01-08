@@ -43,8 +43,9 @@ function AddSuperheroForm({ addSuperhero }) {
       <h1 className="createAHeroHeader">Create A Hero</h1>
 
       <form className="formContainer" onSubmit={handleSubmit}>
+       
         <label>
-          Name
+          Name: 
           <input
             className="inputText"
             type="text"
@@ -55,7 +56,7 @@ function AddSuperheroForm({ addSuperhero }) {
         </label>
 
         <label>
-          Publisher
+          Publisher: 
           <input
             className="inputText"
             type="text"
@@ -66,7 +67,7 @@ function AddSuperheroForm({ addSuperhero }) {
         </label>
 
         <label>
-          Alter Ego
+          Alter Ego: 
           <input
             className="inputText"
             type="text"
@@ -77,7 +78,7 @@ function AddSuperheroForm({ addSuperhero }) {
         </label>
 
         <label>
-          First Appearance
+          First Appearance: 
           <input
             className="inputText"
             type="text"
@@ -88,7 +89,7 @@ function AddSuperheroForm({ addSuperhero }) {
         </label>
 
         <label>
-          Image
+          Image: 
           <input
             className="inputText"
             type="text"
@@ -99,7 +100,7 @@ function AddSuperheroForm({ addSuperhero }) {
         </label>
 
         <label>
-          Characters
+          Characters: 
           <input
             className="inputText"
             type="text"
@@ -108,6 +109,7 @@ function AddSuperheroForm({ addSuperhero }) {
             onChange={(e) => handleChange(e)}
           ></input>
         </label>
+      
 
         <button className="btn btn-form" type="submit">
           {" "}

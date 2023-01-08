@@ -41,7 +41,7 @@ function SuperHeroGrid({ allSuperheroes, setAllSuperheroes }) {
         {allSuperheroes.map((s) => (
           <div className="superheroImageContainer" key={s.name}>
             <h3 className="superheroNames">{s.name}</h3>
-            <img className="images" src={s.image} />
+            <img className="images" alt={`Image of ${s.name}`} src={s.image} />
           </div>
         ))}
       </div>
@@ -51,4 +51,4 @@ function SuperHeroGrid({ allSuperheroes, setAllSuperheroes }) {
 
 export default SuperHeroGrid;
 
-/* for inside the div in the map=   also add alt to image*/
+

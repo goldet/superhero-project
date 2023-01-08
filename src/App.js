@@ -22,7 +22,7 @@ function App() {
           Superheroes
         </button>
         <button className="btn" onClick={() => setIsSuperheroGrid(false)}>
-          Add A Superhero
+         Add Hero
         </button>
       </div>
 
